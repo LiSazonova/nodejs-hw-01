@@ -10,9 +10,9 @@ const generateContacts = async (number) => {
             contacts.push(createFakeContact());
         }
         await fs.writeFile(PATH_DB, JSON.stringify(contacts));
-        console.log('File created successfull!');
+        console.log('Contacts added successfull!');
     } catch (error) {
-        console.log('Failed to write contacts to the file:', error);
+        console.log('Failed to read contacts from the file:', error);
     }
 };
 
